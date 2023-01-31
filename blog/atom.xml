@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://vishalbalaji321.github.io/blog</id>
-    <title>My Site Blog</title>
+    <title>Vishal's Den Blog</title>
     <updated>2021-08-26T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://vishalbalaji321.github.io/blog"/>
-    <subtitle>My Site Blog</subtitle>
+    <subtitle>Vishal's Den Blog</subtitle>
     <icon>https://vishalbalaji321.github.io/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
@@ -21,6 +21,10 @@
         <author>
             <name>Yangshun Tay</name>
             <uri>https://github.com/yangshun</uri>
+        </author>
+        <author>
+            <name>Vishal Balaji</name>
+            <uri>https://vishalbalaji321.github.io</uri>
         </author>
         <category label="facebook" term="facebook"/>
         <category label="hello" term="hello"/>
