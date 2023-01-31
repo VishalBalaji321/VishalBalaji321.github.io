@@ -4,8 +4,8 @@
  * Modify the docusaurus.config.js file at your site's root instead.
  */
 export default {
-  "title": "My Site",
-  "tagline": "Dinosaurs are cool",
+  "title": "Vishal's Den",
+  "tagline": "Welcome to my personal blog/resume site. Initial days...site under active development",
   "favicon": "img/favicon.ico",
   "url": "https://vishalbalaji321.github.io",
   "baseUrl": "/",
@@ -43,25 +43,19 @@ export default {
   "themeConfig": {
     "image": "img/docusaurus-social-card.jpg",
     "navbar": {
-      "title": "My Site",
+      "title": "Vishal's Den",
       "logo": {
         "alt": "My Site Logo",
         "src": "img/logo.svg"
       },
       "items": [
         {
-          "type": "doc",
-          "docId": "intro",
-          "position": "left",
-          "label": "Tutorial"
-        },
-        {
           "to": "/blog",
           "label": "Blog",
           "position": "left"
         },
         {
-          "href": "https://github.com/facebook/docusaurus",
+          "href": "https://github.com/VishalBalaji321/",
           "label": "GitHub",
           "position": "right"
         }
@@ -71,15 +65,6 @@ export default {
     "footer": {
       "style": "dark",
       "links": [
-        {
-          "title": "Docs",
-          "items": [
-            {
-              "label": "Tutorial",
-              "to": "/docs/intro"
-            }
-          ]
-        },
         {
           "title": "Community",
           "items": [
@@ -111,7 +96,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Copyright © 2023 My Project, Inc. Built with Docusaurus."
+      "copyright": "Copyright © 2023 Vishal Balaji. Built with Docusaurus 2."
     },
     "prism": {
       "theme": {

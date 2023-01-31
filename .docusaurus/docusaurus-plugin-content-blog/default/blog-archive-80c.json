@@ -40,6 +40,13 @@
             "url": "https://github.com/yangshun",
             "imageURL": "https://github.com/yangshun.png",
             "key": "yangshun"
+          },
+          {
+            "name": "Vishal Balaji",
+            "title": "Intern @ BMW",
+            "url": "https://vishalbalaji321.github.io",
+            "imageURL": "/img/profile_pic.png",
+            "key": "vishal"
           }
         ],
         "frontMatter": {
@@ -47,7 +54,8 @@
           "title": "Welcome",
           "authors": [
             "slorber",
-            "yangshun"
+            "yangshun",
+            "vishal"
           ],
           "tags": [
             "facebook",
