@@ -7,7 +7,7 @@ readtime: 5 min
 
 ## Welcome to My Blog
 
-This is the first post on my new terminal-themed blog. I'll be writing about cloud infrastructure, autonomous systems, and AI systems. Fun fact: This website was partially generated with the help of latest SOTA Locally hostable LLMs: Qwen3.6 27B and 35B-A3B models.
+This is the first post on my new terminal-themed blog. I'll be writing about cloud infrastructure, autonomous systems, and AI systems. Fun fact: This website was partially generated with the help of latest SOTA Locally hostable LLMs: Qwen3.6 27B and 35B-A3B models (Unsloth versions) ran on llama-server + OpenCode.
 
 ### Why a Blog?
 
