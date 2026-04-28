@@ -15,9 +15,11 @@
   --green-glow: rgba(0, 255, 65, 0.15);
   --green-glow-strong: rgba(0, 255, 65, 0.3);
   --text-primary: #e0e0e0;
+  --text-regular: #cccccc;
   --text-dim: #888;
   --text-muted: #555;
   --border: #2a2a2a;
+  --border-color: #2a2a2a;
   --font-mono: 'Fira Code', 'JetBrains Mono', 'Courier New', monospace;
 }
 
