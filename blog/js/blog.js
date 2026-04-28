@@ -58,6 +58,21 @@ Writing helps me consolidate what I learn. Whether it's a new AWS service, a Kub
 - **Autonomous Systems** — Integration challenges in factory automation
 - **Backend Engineering** — Java microservices, performance tuning, and scalability
 
+Here's a quick code snippet to get things started:
+
+\`\`\`python
+import boto3
+
+def list_s3_buckets():
+    """List all S3 buckets in the account."""
+    s3 = boto3.client('s3')
+    response = s3.list_buckets()
+    for bucket in response['Buckets']:
+        print(f"- {bucket['Name']} ({bucket['CreationDate']})")
+
+list_s3_buckets()
+\`\`\`
+
 Stay tuned for more posts!`,
   },
 };
@@ -271,20 +286,30 @@ async function initPostView() {
   // Render body
   const contentEl = document.getElementById('post-content');
   if (contentEl) {
-    const html = renderMarkdown(post.body);
+    let html;
+    try {
+      html = renderMarkdown(post.body);
+    } catch (e) {
+      console.error('[blog] Markdown render failed:', e);
+      html = `<p>${post.body.replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p>`;
+    }
+    // Safety: if markdown returned empty, show raw body
+    if (!html || html.trim() === '') {
+      html = `<p>${post.body.replace(/\n\n/g, '</p><p>').replace(/</g, '&lt;').replace(/>/g, '&gt;')}</p>`;
+    }
     contentEl.innerHTML = html;
 
     // Fix relative image paths
     contentEl.querySelectorAll('img[src^="images/"]').forEach(img => {
       img.src = `${BLOG_BASE}/${post.slug}/${img.src}`;
     });
-  }
 
-  // Apply code highlighting
-  if (typeof hljs !== 'undefined') {
-    contentEl.querySelectorAll('pre code').forEach(block => {
-      hljs.highlightElement(block);
-    });
+    // Apply code block highlighting
+    if (typeof hljs !== 'undefined') {
+      contentEl.querySelectorAll('pre code').forEach(block => {
+        hljs.highlightElement(block);
+      });
+    }
   }
 
   // Init reading progress bar
