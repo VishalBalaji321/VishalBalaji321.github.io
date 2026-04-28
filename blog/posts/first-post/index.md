@@ -1,13 +1,13 @@
 ---
 title: "My First Blog Post"
-date: 2025-01-15
+date: 2026-04-28
 tags: [AWS, Cloud, Architecture]
 readtime: 5 min
 ---
 
 ## Welcome to My Blog
 
-This is the first post on my new terminal-themed blog. I'll be writing about cloud infrastructure, autonomous systems, and backend engineering.
+This is the first post on my new terminal-themed blog. I'll be writing about cloud infrastructure, autonomous systems, and AI systems. Fun fact: This website was partially generated with the help of latest SOTA Locally hostable LLMs: Qwen3.6 27B and 35B-A3B models.
 
 ### Why a Blog?
 
