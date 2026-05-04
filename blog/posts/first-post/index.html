@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An introduction to the topics behind this site: cloud architecture, backend systems, and autonomous operations.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://vishalbalaji321.github.io/blog/posts/first-post/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="My First Blog Post | Vishal Balaji">
+  <meta property="og:description" content="An introduction to the topics behind this site: cloud architecture, backend systems, and autonomous operations.">
+  <meta property="og:url" content="https://vishalbalaji321.github.io/blog/posts/first-post/">
+  <meta property="og:image" content="https://vishalbalaji321.github.io/pic.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="My First Blog Post | Vishal Balaji">
+  <meta name="twitter:description" content="An introduction to the topics behind this site: cloud architecture, backend systems, and autonomous operations.">
+  <meta name="twitter:image" content="https://vishalbalaji321.github.io/pic.jpg">
+  <title>My First Blog Post | Vishal Balaji</title>
+  <link rel="icon" href="../../../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../css/blog.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "My First Blog Post",
+      "datePublished": "2026-04-28",
+      "dateModified": "2026-04-28",
+      "description": "An introduction to the topics behind this site: cloud architecture, backend systems, and autonomous operations.",
+      "url": "https://vishalbalaji321.github.io/blog/posts/first-post/",
+      "author": {
+        "@type": "Person",
+        "name": "Vishal Balaji"
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Vishal Balaji"
+      },
+      "image": "https://vishalbalaji321.github.io/pic.jpg"
+    }
+  </script>
+</head>
+<body class="blog-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <nav aria-label="Primary">
+    <div class="nav-inner">
+      <a class="nav-brand" href="../../../index.html">~/vbalaji</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="blog-post-menu">&#9776;</button>
+      <ul class="nav-links" id="blog-post-menu">
+        <li><a href="../../../index.html#about">about</a></li>
+        <li><a href="../../../index.html#experience">experience</a></li>
+        <li><a href="../../../index.html#education">education</a></li>
+        <li><a href="../../../index.html#projects">projects</a></li>
+        <li><a href="../../../index.html#skills">skills</a></li>
+        <li><a href="../../../index.html#certifications">certs</a></li>
+        <li><a href="../../../index.html#contact">contact</a></li>
+        <li><a href="../../../resume/index.html">resume</a></li>
+        <li><a href="../../index.html" class="active" aria-current="page">blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="reading-progress" aria-hidden="true"></div>
+
+  <main class="post-view" id="main-content">
+    <a href="../../index.html" class="back-link">
+      &#8592; back to blog
+    </a>
+
+    <article>
+      <header class="post-header">
+        <h1 class="post-title">My First Blog Post</h1>
+        <div class="post-meta">
+          <time class="post-date" datetime="2026-04-28">April 28, 2026</time>
+          <span class="post-readtime">5 min</span>
+        </div>
+        <div class="post-tags">
+          <span class="post-tag">AWS</span>
+          <span class="post-tag">Cloud</span>
+          <span class="post-tag">Architecture</span>
+        </div>
+      </header>
+
+      <div id="post-content">
+        <h2>Welcome to My Blog</h2>
+        <p>This is the first post on my new terminal-themed blog. I&rsquo;ll be writing about cloud infrastructure, autonomous systems, and AI systems. Fun fact: this website was partially generated with the help of locally hosted Qwen models running through <code>llama-server</code> and OpenCode.</p>
+
+        <h3>Why a Blog?</h3>
+        <p>Writing helps me consolidate what I learn. Whether it&rsquo;s a new AWS service, a Kubernetes pattern, or a computer vision algorithm, I believe in documenting the journey.</p>
+
+        <h3>What to Expect</h3>
+        <ul>
+          <li><strong>Cloud Architecture</strong> - AWS patterns, infrastructure design, and lessons from production</li>
+          <li><strong>Autonomous Systems</strong> - Integration challenges in factory automation</li>
+          <li><strong>Backend Engineering</strong> - Java microservices, performance tuning, and scalability</li>
+        </ul>
+
+        <p>Here&rsquo;s a quick code snippet to get things started:</p>
+
+        <pre><code class="language-python">import boto3
+
+def list_s3_buckets():
+    """List all S3 buckets in the account."""
+    s3 = boto3.client('s3')
+    response = s3.list_buckets()
+    for bucket in response['Buckets']:
+        print(f"- {bucket['Name']} ({bucket['CreationDate']})")
+
+list_s3_buckets()</code></pre>
+
+        <p>Stay tuned for more posts.</p>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Vishal Balaji. Built with vanilla HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="../../js/blog.js"></script>
+</body>
+</html>

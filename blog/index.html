@@ -3,24 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Writing on cloud architecture, backend systems, and autonomous operations from a cloud backend engineer at BMW Group.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://vishalbalaji321.github.io/blog/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog | Vishal Balaji">
+  <meta property="og:description" content="Writing on cloud architecture, backend systems, and autonomous operations from a cloud backend engineer at BMW Group.">
+  <meta property="og:url" content="https://vishalbalaji321.github.io/blog/">
+  <meta property="og:image" content="https://vishalbalaji321.github.io/pic.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog | Vishal Balaji">
+  <meta name="twitter:description" content="Writing on cloud architecture, backend systems, and autonomous operations from a cloud backend engineer at BMW Group.">
+  <meta name="twitter:image" content="https://vishalbalaji321.github.io/pic.jpg">
   <title>Blog | Vishal Balaji</title>
-  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="css/blog.css">
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Vishal Balaji Blog",
+      "url": "https://vishalbalaji321.github.io/blog/",
+      "description": "Writing on cloud architecture, backend systems, and autonomous operations from a cloud backend engineer at BMW Group.",
+      "author": {
+        "@type": "Person",
+        "name": "Vishal Balaji"
+      }
+    }
+  </script>
 </head>
 <body class="blog-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- NAVIGATION -->
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-inner">
-      <span class="nav-brand">~/vbalaji</span>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
-      <ul class="nav-links">
+      <a class="nav-brand" href="../index.html">~/vbalaji</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="blog-menu">&#9776;</button>
+      <ul class="nav-links" id="blog-menu">
         <li><a href="../index.html#about">about</a></li>
         <li><a href="../index.html#experience">experience</a></li>
         <li><a href="../index.html#education">education</a></li>
@@ -28,39 +51,72 @@
         <li><a href="../index.html#skills">skills</a></li>
         <li><a href="../index.html#certifications">certs</a></li>
         <li><a href="../index.html#contact">contact</a></li>
-        <li><a href="index.html" class="active">blog</a></li>
+        <li><a href="../resume/index.html">resume</a></li>
+        <li><a href="index.html" class="active" aria-current="page">blog</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Blog Hero -->
-  <section class="blog-hero">
-    <div class="container">
-      <div class="terminal">
-        <div class="terminal-header">
-          <span class="terminal-dot red"></span>
-          <span class="terminal-dot yellow"></span>
-          <span class="terminal-dot green"></span>
-          <span class="terminal-title">blog</span>
-        </div>
-        <div class="terminal-body">
-          <h1>$ cat /var/log/blog</h1>
-          <p>Notes on cloud architecture, autonomous systems, and backend engineering.</p>
+  <main id="main-content">
+    <section class="blog-hero" aria-labelledby="blog-heading">
+      <div class="container">
+        <div class="terminal">
+          <div class="terminal-header">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">blog</span>
+          </div>
+          <div class="terminal-body">
+            <h1 id="blog-heading">Field Notes on Cloud and Autonomous Systems</h1>
+            <p>Production lessons, architecture decisions, and backend engineering notes from autonomous factory logistics and cloud-native systems.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Tag Filters -->
-  <div class="tag-filters" id="tag-filters"></div>
+    <section class="blog-listing" aria-labelledby="blog-posts-heading">
+      <div class="container">
+        <div class="blog-listing-header">
+          <p class="prompt-line">$ ls posts/</p>
+          <h2 id="blog-posts-heading">Posts</h2>
+        </div>
 
-  <!-- Post List -->
-  <div id="blog-posts"></div>
+        <div class="tag-filters" role="group" aria-label="Filter posts by topic">
+          <button class="tag-pill active" type="button" data-tag="all" aria-pressed="true">all (1)</button>
+          <button class="tag-pill" type="button" data-tag="aws" aria-pressed="false">AWS (1)</button>
+          <button class="tag-pill" type="button" data-tag="cloud" aria-pressed="false">Cloud (1)</button>
+          <button class="tag-pill" type="button" data-tag="architecture" aria-pressed="false">Architecture (1)</button>
+        </div>
 
-  <!-- Footer -->
+        <div id="blog-posts">
+          <article class="post-card" data-tags="aws cloud architecture">
+            <div class="post-card-header">
+              <h3 class="post-card-title">
+                <a href="posts/first-post/index.html">My First Blog Post</a>
+              </h3>
+              <div class="post-card-meta">
+                <time class="post-date" datetime="2026-04-28">April 28, 2026</time>
+                <span class="post-readtime">5 min</span>
+              </div>
+            </div>
+            <div class="post-card-excerpt">An introduction to the topics behind this site: cloud architecture, backend systems, and autonomous operations, plus the kind of production lessons future posts will cover.</div>
+            <div class="post-card-tags">
+              <span class="post-tag">AWS</span>
+              <span class="post-tag">Cloud</span>
+              <span class="post-tag">Architecture</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="no-posts" hidden>No posts match that filter yet.</p>
+      </div>
+    </section>
+  </main>
+
   <footer>
     <div class="container">
-      <p>&copy; 2026 Vishal Balaji. Built with vanilla HTML/CSS/JS.</p>
+      <p>&copy; 2026 Vishal Balaji. Built with vanilla HTML, CSS, and JavaScript.</p>
     </div>
   </footer>
 

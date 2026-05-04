@@ -154,15 +154,25 @@ body.blog-page footer {
   color: var(--text-regular);
 }
 
+.blog-listing {
+  padding: 0 0 60px;
+}
+
+.blog-listing-header {
+  margin-bottom: 1rem;
+}
+
+.blog-listing-header h2 {
+  color: var(--green);
+  font-size: 1.3rem;
+}
+
 /* === TAG FILTERS === */
 .tag-filters {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  padding: 20px 0;
-  max-width: 900px;
-  margin: 0 auto;
-  justify-content: center;
+  padding: 0 0 20px;
 }
 
 .tag-pill {
@@ -211,6 +221,10 @@ body.blog-page footer {
   border-left-color: var(--green);
   transform: translateX(4px);
   box-shadow: 0 0 20px rgba(0, 255, 65, 0.05);
+}
+
+.post-card[hidden] {
+  display: none;
 }
 
 .post-card-header {
@@ -274,6 +288,10 @@ body.blog-page footer {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.post-header {
+  margin-bottom: 1.75rem;
 }
 
 .post-title {
@@ -413,21 +431,6 @@ body.blog-page footer {
   color: var(--text-regular);
   padding: 0;
 }
-
-/* Override highlight.js theme for terminal look */
-#post-content pre .hljs-keyword { color: #ff7b72; }
-#post-content pre .hljs-string { color: #a5d6ff; }
-#post-content pre .hljs-comment { color: #8b949e; font-style: italic; }
-#post-content pre .hljs-function { color: #d2a8ff; }
-#post-content pre .hljs-number { color: #79c0ff; }
-#post-content pre .hljs-variable { color: #ffa657; }
-#post-content pre .hljs-built_in { color: #ff7b72; }
-#post-content pre .hljs-title { color: #d2a8ff; }
-#post-content pre .hljs-attr { color: #79c0ff; }
-#post-content pre .hljs-selector-class { color: #a5d6ff; }
-#post-content pre .hljs-type { color: #79c0ff; }
-#post-content pre .hljs-literal { color: #ff7b72; }
-#post-content pre .hljs-meta { color: #8b949e; }
 
 /* === BLOG FOOTER === */
 .footer {

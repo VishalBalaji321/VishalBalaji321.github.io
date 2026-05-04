@@ -3,20 +3,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cloud Backend Engineer at BMW Group building AWS and Kubernetes-based systems for autonomous factory logistics and backend orchestration.">
+  <meta name="theme-color" content="#0a0a0a">
+  <link rel="canonical" href="https://vishalbalaji321.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vishal Balaji | Cloud Backend Engineer">
+  <meta property="og:description" content="Cloud Backend Engineer at BMW Group building AWS and Kubernetes-based systems for autonomous factory logistics and backend orchestration.">
+  <meta property="og:url" content="https://vishalbalaji321.github.io/">
+  <meta property="og:image" content="https://vishalbalaji321.github.io/pic.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vishal Balaji | Cloud Backend Engineer">
+  <meta name="twitter:description" content="Cloud Backend Engineer at BMW Group building AWS and Kubernetes-based systems for autonomous factory logistics and backend orchestration.">
+  <meta name="twitter:image" content="https://vishalbalaji321.github.io/pic.jpg">
   <title>Vishal Balaji | Cloud Backend Engineer</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <noscript>
+    <style>
+      .boot-line,
+      .hero-tagline {
+        opacity: 1 !important;
+      }
+
+      .hero-copy-fallback {
+        position: static !important;
+        width: auto !important;
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        overflow: visible !important;
+        clip: auto !important;
+        white-space: normal !important;
+      }
+
+      .hero-copy-fallback.hero-copy-name {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #00ff41;
+        text-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+        margin: 1.5rem 0 0.5rem;
+      }
+
+      .hero-copy-fallback.hero-copy-title {
+        font-size: 1.1rem;
+        color: #888;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </noscript>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Vishal Balaji",
+      "jobTitle": "Cloud Backend Engineer",
+      "url": "https://vishalbalaji321.github.io/",
+      "image": "https://vishalbalaji321.github.io/pic.jpg",
+      "sameAs": [
+        "https://github.com/VishalBalaji321",
+        "https://www.linkedin.com/in/vishalbalaji321/"
+      ],
+      "worksFor": {
+        "@type": "Organization",
+        "name": "BMW Group"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Munich",
+        "addressCountry": "DE"
+      },
+      "knowsAbout": [
+        "AWS",
+        "Java",
+        "Kubernetes",
+        "Backend Engineering",
+        "Autonomous Systems",
+        "Computer Vision"
+      ]
+    }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- NAVIGATION -->
-  <nav>
+  <nav aria-label="Primary">
     <div class="nav-inner">
-      <span class="nav-brand">~/vbalaji</span>
-      <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
-      <ul class="nav-links">
+      <a class="nav-brand" href="index.html">~/vbalaji</a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-menu">&#9776;</button>
+      <ul class="nav-links" id="site-menu">
         <li><a href="#about">about</a></li>
         <li><a href="#experience">experience</a></li>
         <li><a href="#education">education</a></li>
@@ -24,13 +102,16 @@
         <li><a href="#skills">skills</a></li>
         <li><a href="#certifications">certs</a></li>
         <li><a href="#contact">contact</a></li>
+        <li><a href="resume/index.html">resume</a></li>
         <li><a href="blog/index.html">blog</a></li>
       </ul>
     </div>
   </nav>
 
+  <main id="main-content">
+
   <!-- HERO -->
-  <section id="hero">
+  <section id="hero" aria-labelledby="hero-heading">
     <div class="hero-fourier-bg" aria-hidden="true">
       <canvas class="hero-fourier-canvas"></canvas>
     </div>
@@ -44,7 +125,7 @@
         </div>
         <div class="terminal-body">
           <div class="hero-photo">
-            <img src="pic.jpg" alt="Vishal Balaji" />
+            <img src="pic.jpg" alt="Portrait of Vishal Balaji" width="400" height="400" decoding="async" fetchpriority="high" />
           </div>
           <div class="hero-ascii" aria-hidden="true">
  ____  _             _        _ _
@@ -65,12 +146,19 @@
           <div class="boot-line" style="opacity: 0; transition: opacity 0.3s;">
             <span class="hero-line"><span class="output">[OK] Autonomous systems online</span></span>
           </div>
-          <div class="hero-name"></div>
-          <div class="hero-title"></div>
-          <div class="hero-tagline" style="opacity: 0; transition: opacity 0.8s ease;">
+          <h1 class="sr-only hero-copy-fallback hero-copy-name" id="hero-heading">Vishal Balaji</h1>
+          <p class="sr-only hero-copy-fallback hero-copy-title">Cloud Backend Engineer | Autonomous Systems</p>
+          <div class="hero-name" aria-hidden="true" data-text="Vishal Balaji"></div>
+          <div class="hero-title" aria-hidden="true" data-text="Cloud Backend Engineer | Autonomous Systems"></div>
+          <p class="hero-tagline" style="opacity: 0; transition: opacity 0.8s ease;">
             Orchestrating Autonomous Driving in BMW Plants | AWS Certified Solutions Architect | Munich, Germany
+          </p>
+          <div class="hero-actions">
+            <a href="resume/index.html" class="hero-action hero-action-primary">Resume</a>
+            <a href="mailto:vishalvichu45@gmail.com" class="hero-action">Email</a>
+            <a href="https://www.linkedin.com/in/vishalbalaji321/" target="_blank" rel="me noopener" class="hero-action">LinkedIn</a>
+            <a href="https://github.com/VishalBalaji321" target="_blank" rel="me noopener" class="hero-action">GitHub</a>
           </div>
-          <br>
           <div class="hero-line">
             <span class="prompt">vbalaji@portfolio:~$</span> <span class="cursor-blink"></span>
           </div>
@@ -560,7 +648,7 @@
             </svg>
             Email
           </a>
-          <a href="https://github.com/VishalBalaji321" target="_blank" rel="noopener" class="contact-link">
+          <a href="https://github.com/VishalBalaji321" target="_blank" rel="me noopener" class="contact-link">
             <svg viewBox="0 0 16 16" aria-hidden="true">
               <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
               0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15
@@ -573,7 +661,7 @@
             </svg>
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/vishalbalaji321/" target="_blank" rel="noopener" class="contact-link">
+          <a href="https://www.linkedin.com/in/vishalbalaji321/" target="_blank" rel="me noopener" class="contact-link">
             <svg viewBox="0 0 16 16" aria-hidden="true">
               <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0
               .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943
@@ -595,15 +683,17 @@
     </div>
   </section>
 
+  </main>
+
   <!-- FOOTER -->
   <footer>
     <div class="container">
-      <p>&gt; Uses vanilla HTML/CSS/JS </p>
+      <p>&gt; Built with vanilla HTML, CSS, and JavaScript.</p>
       <p style="margin-top: 0.5rem;">
         <a href="mailto:vishalvichu45@gmail.com" class="footer-email">vishalvichu45@gmail.com</a>
       </p>
       <p style="margin-top: 0.5rem; color: var(--green-dark);">
-        &copy; 2026 Vishal Balaji | Built with Qwen3.6-27B and Qwen3.6 35B-A3B
+        &copy; 2026 Vishal Balaji | Cloud backend engineering, Autonomous systems and Applied AI
       </p>
     </div>
   </footer>

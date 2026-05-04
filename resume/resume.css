@@ -1,0 +1,264 @@
+.resume-page {
+  min-height: 100vh;
+  background: #e5e7eb;
+  color: #111827;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.resume-page::after {
+  display: none;
+}
+
+.resume-page .prompt-line {
+  color: #0f766e;
+}
+
+.resume-page a {
+  color: #0f766e;
+}
+
+.resume-page a:hover {
+  color: #115e59;
+  text-shadow: none;
+}
+
+.resume-main {
+  padding: 100px 0 60px;
+}
+
+.resume-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 920px;
+}
+
+.resume-hero {
+  background: #ffffff;
+  border-color: #d1d5db;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+}
+
+.resume-hero .terminal-header {
+  background: #f8fafc;
+  border-bottom-color: #e5e7eb;
+}
+
+.resume-hero .terminal-title {
+  color: #64748b;
+}
+
+.resume-hero .terminal-body h1 {
+  color: #0f172a;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.resume-role {
+  color: #334155;
+  max-width: 640px;
+  line-height: 1.6;
+}
+
+.resume-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin-top: 1rem;
+  color: #475569;
+  font-size: 0.85rem;
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.25rem;
+}
+
+.resume-actions .hero-action {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.resume-section {
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.resume-section h2 {
+  color: #0f172a;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.resume-item + .resume-item {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.resume-item-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.resume-item h3 {
+  color: #0f172a;
+  font-size: 1rem;
+}
+
+.resume-company {
+  color: #0f766e;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.resume-date {
+  color: #64748b;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.resume-section > p,
+.resume-item p,
+.resume-item li {
+  color: #334155;
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+.resume-item ul {
+  padding-left: 1.2rem;
+  margin-top: 0.25rem;
+}
+
+.resume-item li + li {
+  margin-top: 0.4rem;
+}
+
+.resume-item.compact p {
+  margin-top: 0.25rem;
+}
+
+.resume-page .skill-tags {
+  gap: 0.5rem;
+}
+
+.resume-page .skill-tag {
+  color: #0f172a;
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.resume-page .skill-tag:hover {
+  color: #0f172a;
+  background: #ecfeff;
+  border-color: #5eead4;
+}
+
+.resume-page .hero-action {
+  color: #0f172a;
+  background: #ffffff;
+  border-color: #cbd5e1;
+}
+
+.resume-page .hero-action:hover {
+  color: #0f172a;
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.resume-page .hero-action-primary {
+  color: #ffffff;
+  background: #0f766e;
+  border-color: #0f766e;
+}
+
+.resume-page .hero-action-primary:hover {
+  color: #ffffff;
+  background: #115e59;
+  border-color: #115e59;
+}
+
+@media (max-width: 768px) {
+  .resume-main {
+    padding-top: 90px;
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-item-header {
+    flex-direction: column;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+  }
+
+  .resume-actions .hero-action {
+    width: 100%;
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.5in;
+  }
+
+  .skip-link,
+  nav,
+  footer,
+  .resume-actions {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+    color: #111111;
+  }
+
+  .resume-main {
+    padding: 0;
+  }
+
+  .resume-section,
+  .resume-hero {
+    background: #ffffff !important;
+    border-color: #cccccc !important;
+    box-shadow: none !important;
+  }
+
+  .resume-shell {
+    gap: 1rem;
+    max-width: none;
+  }
+
+  .resume-section h2,
+  .resume-hero .terminal-body h1,
+  .resume-company,
+  .prompt-line,
+  a {
+    color: #111111 !important;
+    text-shadow: none !important;
+  }
+
+  body::after {
+    display: none;
+  }
+}
