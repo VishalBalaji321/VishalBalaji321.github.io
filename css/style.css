@@ -258,15 +258,15 @@ section {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at center, transparent 52%, rgba(10, 10, 10, 0.14) 82%, rgba(10, 10, 10, 0.64) 100%);
+  background: radial-gradient(circle at center, transparent 60%, rgba(10, 10, 10, 0.05) 86%, rgba(10, 10, 10, 0.42) 100%);
 }
 
 .hero-fourier-canvas {
   width: 100%;
   height: 100%;
   display: block;
-  opacity: 0.66;
-  filter: drop-shadow(0 0 18px rgba(0, 255, 65, 0.12));
+  opacity: 1;
+  filter: drop-shadow(0 0 20px rgba(0, 255, 65, 0.22));
 }
 
 .hero-terminal {
@@ -351,6 +351,62 @@ section {
   color: var(--bg-primary);
   background: #4dff82;
   border-color: #4dff82;
+}
+
+/* CV download: segmented EN / DE control */
+.hero-cv {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--green);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-tertiary);
+  transition: box-shadow 0.2s;
+}
+
+.hero-cv:hover {
+  box-shadow: 0 0 16px var(--green-glow-strong);
+}
+
+.hero-cv-label {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 0.85rem;
+  background: var(--green);
+  color: var(--bg-primary);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.hero-cv-lang {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.6rem 0.8rem;
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-left: 1px solid var(--green-dark);
+  transition: background 0.2s, color 0.2s;
+}
+
+.hero-cv-lang::before {
+  content: "\2193";
+  font-size: 0.7em;
+  color: var(--green-dim);
+  transition: color 0.2s;
+}
+
+.hero-cv-lang:hover {
+  background: var(--green);
+  color: var(--bg-primary);
+  text-shadow: none;
+}
+
+.hero-cv-lang:hover::before {
+  color: var(--bg-primary);
 }
 
 .cursor-blink {
@@ -978,7 +1034,7 @@ footer {
   }
 
   .hero-fourier-canvas {
-    opacity: 0.6;
+    opacity: 0.95;
   }
 
   .hero-photo img {
@@ -1003,6 +1059,15 @@ footer {
     width: 100%;
   }
 
+  .hero-cv {
+    width: 100%;
+  }
+
+  .hero-cv-lang {
+    flex: 1;
+    justify-content: center;
+  }
+
   section {
     padding: 3rem 0;
   }
@@ -1025,7 +1090,7 @@ footer {
   }
 
   .hero-fourier-bg::after {
-    background: radial-gradient(circle at center, transparent 34%, rgba(10, 10, 10, 0.22) 72%, rgba(10, 10, 10, 0.78) 100%);
+    background: radial-gradient(circle at center, transparent 46%, rgba(10, 10, 10, 0.08) 76%, rgba(10, 10, 10, 0.55) 100%);
   }
 
   .hero-photo img {

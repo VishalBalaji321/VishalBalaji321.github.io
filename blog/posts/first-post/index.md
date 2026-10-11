@@ -1,5 +1,5 @@
 ---
-title: "My First Blog Post"
+title: "Why This Blog: Cloud Platforms, Autonomous Systems and Applied AI"
 date: 2026-04-28
 tags: [AWS, Cloud, Architecture]
 readtime: 5 min
@@ -7,7 +7,7 @@ readtime: 5 min
 
 ## Welcome to My Blog
 
-This is the first post on my new terminal-themed blog. I'll be writing about cloud infrastructure, autonomous systems, and AI systems. Fun fact: This website was partially generated with the help of latest SOTA Locally hostable LLMs: Qwen3.6 27B and 35B-A3B models (Unsloth versions) ran on llama-server + OpenCode.
+This is the first post on my new terminal-themed blog. I'll be writing about cloud infrastructure, autonomous systems, and AI systems. Fun fact: this website was partially generated with the help of locally hosted Qwen models running through <code>llama-server</code> and OpenCode.
 
 ### Why a Blog?
 
@@ -15,9 +15,9 @@ Writing helps me consolidate what I learn. Whether it's a new AWS service, a Kub
 
 ### What to Expect
 
-- **Cloud Architecture** — AWS patterns, infrastructure design, and lessons from production
-- **Autonomous Systems** — Integration challenges in factory automation
-- **Backend Engineering** — Java microservices, performance tuning, and scalability
+- **Cloud Architecture**: AWS patterns, infrastructure design, and lessons from production
+- **Autonomous Systems**: Integration challenges in factory automation
+- **Backend Engineering**: Java microservices, performance tuning, and scalability
 
 Here's a quick code snippet to get things started:
 
