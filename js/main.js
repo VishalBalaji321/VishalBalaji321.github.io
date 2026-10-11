@@ -208,11 +208,11 @@ function initHeroSignalBackground() {
     { x: 0.76, y: 0.44, r: 0.6, speed: 0.09, phase: 2.1, alpha: 0.045 }
   ];
   const routeDefs = [
-    { p0: [0, 0.14], p1: [0.32, 0.02], p2: [0.66, 0.24], p3: [1, 0.12], alpha: 0.1, vehicles: [{ phase: 0.3, speed: 0.05, size: 6.4 }] },
-    { p0: [0, 0.3], p1: [0.3, 0.14], p2: [0.64, 0.44], p3: [1, 0.26], alpha: 0.12, vehicles: [{ phase: 0.05, speed: 0.055, size: 6.8 }, { phase: 0.62, speed: 0.04, size: 6.2 }] },
-    { p0: [0, 0.46], p1: [0.32, 0.34], p2: [0.68, 0.6], p3: [1, 0.44], alpha: 0.1, vehicles: [{ phase: 0.44, speed: 0.048, size: 6.4 }] },
-    { p0: [0, 0.62], p1: [0.34, 0.8], p2: [0.66, 0.38], p3: [1, 0.56], alpha: 0.12, vehicles: [{ phase: 0.7, speed: 0.052, size: 6.6 }, { phase: 0.2, speed: 0.038, size: 6.2 }] },
-    { p0: [0, 0.88], p1: [0.38, 0.98], p2: [0.68, 0.7], p3: [1, 0.9], alpha: 0.11, vehicles: [{ phase: 0.18, speed: 0.046, size: 6.4 }] }
+    { p0: [0, 0.14], p1: [0.32, 0.02], p2: [0.66, 0.24], p3: [1, 0.12], alpha: 0.1, vehicles: [{ phase: 0.3, speed: 0.05, size: 7.4 }] },
+    { p0: [0, 0.3], p1: [0.3, 0.14], p2: [0.64, 0.44], p3: [1, 0.26], alpha: 0.12, vehicles: [{ phase: 0.05, speed: 0.055, size: 7.8 }, { phase: 0.62, speed: 0.04, size: 7.2 }] },
+    { p0: [0, 0.46], p1: [0.32, 0.34], p2: [0.68, 0.6], p3: [1, 0.44], alpha: 0.1, vehicles: [{ phase: 0.44, speed: 0.048, size: 7.4 }] },
+    { p0: [0, 0.62], p1: [0.34, 0.8], p2: [0.66, 0.38], p3: [1, 0.56], alpha: 0.12, vehicles: [{ phase: 0.7, speed: 0.052, size: 7.6 }, { phase: 0.2, speed: 0.038, size: 7.2 }] },
+    { p0: [0, 0.88], p1: [0.38, 0.98], p2: [0.68, 0.7], p3: [1, 0.9], alpha: 0.11, vehicles: [{ phase: 0.18, speed: 0.046, size: 7.4 }] }
   ];
 
   function drawAurora(time) {
